@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <title>Название документа (страницы)</title>
+        <link href="styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
-
-        <header class="page-header">
-            <h1>Заголовок страницы</h1>
-        </header>
 
         <nav class="page-navigation">
             <ul>
@@ -18,20 +18,35 @@
                 <li><a href='#'>Контакты</a></li>
             </ul>
 
-            <!-- Форма поиска для навигации по сайту -->
-
-            <form>
-                <input type="search" name="q" placeholder="Найти..."/>
-                <input type="sumbit" value="Поиск!"/>
-            </form>
+            <header class="page-header">
+                <p>АРТ — ПРОСТРАНСТВО</p>
+                <img class="lenni-main-png" src="lenni-main.png">
+                <p>ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ</p>
+                <p>МЕСТО ДЛЯ НАСТЯЩЕГО</p>
+            </header>
         </nav>
 
+        <div class="i-want">
+            <p>Я ХОЧУ:</p>
+            <button style="border: none; background-color: #BC3324; color:aliceblue">Провести мероприятие</button>
+            <button style>Стать арендатором</button>
+        </div>
+
+        <div class="about-us">
+            <button>О НАС</button>
+        </div>
+
         <main class="page-main">
-            <section>
+            <section class="page-section">
                 <article class="page-article">
-                    <h2>Заголовок статьи</h2>
-                    <p title="подсказка для параграфа">Параграф текста</p>
+                    <h2 class="article-header">Проект «Millennials»</h2>
+                    <p title="text">Вдохновлен молодыми идейными людьми, увлеченными творчеством,
+                        эмоциями и желанием</p> 
+                    <p>сделать мир лучше, проявить себя. У них есть талант и стремление, 
+                        у нас возможность помочь</p>
+                    <p>им воплотить их мечту в реальность</p>
                 </article>
+                <img src="millenials-1.png">
             </section>
         </main>
 

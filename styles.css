@@ -1,0 +1,46 @@
+.page-header {
+    text-align: center;
+    font-family: Lora;
+    size: 45px;
+}
+
+.i-want {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.i-want p {
+    font-family: Lora;
+}
+.i-want button {
+    font-family: "Open Sans";
+    size: 300px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    margin: 50px;
+}
+
+.about-us {
+    text-align: center;
+}
+.about-us button {
+    background-color: #1F1E1E;
+    color:#FFFFFF;
+    padding: 15px 32px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.page-article p{
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 300;
+    font-family: 'Open Sans';
+    size: 18px;
+}
+
+.article-header {
+    size: 44px;
+    margin-left: 200px;
+}
