@@ -1,7 +1,48 @@
 .page-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DEDEDE80;
+}
+
+.page-navigation {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+}
+.logo {
+    margin-left: 150px;
+}
+.page-navigation li {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.page-navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.page-navigation a:hover {
+    color:#BC3324;
+}
+
+.login-button {
+    background-color: 0;
+    margin-top: 15px;
+    margin-right: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 40px;
+}
+.login-button:hover {
+    color: #BC3324;
+}
+
+.page-afterheader {
     text-align: center;
     font-family: Lora;
-    size: 45px;
+    font-size: 35px;
 }
 
 .i-want {
@@ -11,13 +52,14 @@
 }
 .i-want p {
     font-family: Lora;
+    font-size: 22px;
 }
 .i-want button {
     font-family: "Open Sans";
-    size: 300px;
     border-radius: 2px;
     padding: 15px 32px;
     margin: 50px;
+    font-size: 16px;
 }
 
 .about-us {
@@ -31,18 +73,32 @@
     padding-right: 240px;
     margin-top: 100px;
     margin-bottom: 100px;
+    font-size: 36px;
 }
 
 .page-article p{
+    margin-left: 350px;
     text-align: left;
     display: flex;
-    justify-content: flex-end;
     max-width: 300;
     font-family: 'Open Sans';
-    size: 18px;
+    font-size: 18px;
 }
 
 .article-header {
-    size: 44px;
-    margin-left: 200px;
+    font-size: 44px;
+    margin-left: 50px;
+}
+
+.png-millenials {
+    margin-left: 25px;
+    margin-top: 100px;
+}
+.png2-millenials {
+    padding-left: 25px;
+    margin-top: 200px;
+}
+
+.img-cont-millenials {
+    display: flex;
 }
