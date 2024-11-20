@@ -1,195 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <title>Мероприятия</title>
-        <link href="styles.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    </head>
+    @@include('blocks/head.html')
 
     <body class="body">
-    <header class="page-header">
-      <div class="page-header__container">
-        <a href="index.html" class="page-header__logo">
-            <img 
-                src="./assets/headericon_sml2.svg" 
-                class="page-header__logo-icon"
-                alt="logo"
-            />
-        </a>
-        <nav class="page-header__nav">
-                <a href="#" class="page-header__nav-link">Мероприятия</a>
-                <a href="#" class="page-header__nav-link">Блог</a>
-                <a href="#" class="page-header__nav-link">О нас</a>
-                <a href='#' class="page-header__nav-link">Контакты</a>
-        </nav>
-        <div class="page-header__right-block">
-            <a href="#" class="login-button">Войти </a>
-            <!-- <a href="#" class="login-button__name"> Никита П.</a>
-            <a href="#" class="login-button__logout"></a> -->
-            <!-- <svg
-                width="24"    
-            >
-                
-            </svg> -->
-        </div>
-      </div>
-    </header>
-    <main class="main">
+        @@include('blocks/page-header.html')
 
+        <main class="main">
 
-        <div class="events">
-        <!--Хлебные крошки-->
+            <div class="events">
 
-            <section class="events__listing listing">
-                <h2 class="listing__title section-title">Мероприятия</h2>
+                <!--Хлебные крошки-->
 
-                <div class="listing__events-list">
-                    <!--Карточка товара Nirvana-->
-                    <article class="event-card listing__event-card">
-                        <a href="#" class="event-card__link">
-                            <picture class="event-card__picture">
-                                <img src="./assets/card_nirvana.jpg" class="event-card__img" alt="card">
-                            </picture>
-
-                            <h4 class="event-card__title">
-                                Собираемся и слушаем альбом Nirvana. Nirvana
-                            </h4>
-
-                            <p class="event-card__description">
-                                Это третий альбом группы, выпущенный 
-                                после смерти Курта Кобейна и первый, содержащий студийный материал.
-                            </p>
-                            <time datetime="2022-12-07T18:00" class="event-card__time">
-                                07.12.2022 | начало 18.00
-                            </time>
-                        </a>
-
-                    </article>
-
-                    <!--Карточка товара HowStuffWorks-->
-                    <article class="event-card listing__event-card">
-                        <a href="#" class="event-card__link">
-                            <picture class="event-card__picture">
-                                <img src="./assets/card_stuff.jpg" class="event-card__img" alt="card">
-                            </picture>
-
-                            <h4 class="event-card__title">
-                                Есть тема, нужно обсудить с HowStuffWorks
-                            </h4>
-
-                            <p class="event-card__description">
-                                Один из самых популярных подкастов в мире. 
-                                В нём авторы объясняют, как устроены разные вещи.
-                            </p>
-                            <time datetime="2022-12-14T18:30" class="event-card__time">
-                                14.12.2022 | начало 18.30
-                            </time>
-                        </a>
-
-                    </article>
-
-                    <!--Карточка товара The Best of Sade-->
-                    <article class="event-card listing__event-card">
-                        <a href="#" class="event-card__link">
-                            <picture class="event-card__picture">
-                                <img src="./assets/card_sade.jpg" class="event-card__img" alt="card">
-                            </picture>
-
-                            <h4 class="event-card__title">
-                                Вечер | The Best of Sade
-                            </h4>
-
-                            <p class="event-card__description">
-                                Музыка группы имеет эклектичный характер, сочетая 
-                                в себе элементы музыки соул, джаза, ритм-блюза и фанка.
-                            </p>
-                            <time datetime="2022-12-16T20:00" class="event-card__time">
-                                16.12.2022 | начало 20.00
-                            </time>
-                        </a>
-
-                    </article>
-
-                    <!--Карточка товара Выставка Малевича-->
-                    <article class="event-card listing__event-card">
-                        <a href="#" class="event-card__link">
-                            <picture class="event-card__picture">
-                                <img src="./assets/card_malevich.jpg" class="event-card__img" alt="card">
-                            </picture>
-
-                            <h4 class="event-card__title">
-                                Выставка Малевича в Томске
-                            </h4>
-
-                            <p class="event-card__description">
-                                Это будет самая полная выставка с 1988 года, того времени, 
-                                когда впервые заговорили о Малевиче. Экспозиция займёт 
-                                два этажа павильона.
-                            </p>
-                            <time datetime="2022-12-23T20:00" class="event-card__time">
-                                23.12.2022 | начало 20.00
-                            </time>
-                        </a>
-
-                    </article>
-
-                    <!--Карточка товара Tatler-->
-                    <article class="event-card listing__event-card">
-                        <a href="#" class="event-card__link">
-                            <picture class="event-card__picture">
-                                <img src="./assets/card_tatler.jpg" class="event-card__img" alt="card">
-                            </picture>
-
-                            <h4 class="event-card__title">
-                                Мастер — класс по студийной съемке от Tatler
-                            </h4>
-
-                            <p class="event-card__description">
-                                Фотографы издания расскажут, как им удается создавать 
-                                потрясающие кадры и что может испортить весь процесс.
-                            </p>
-                            <time datetime="2022-12-25T13:00" class="event-card__time">
-                                25.12.2022 | начало 13.00
-                            </time>
-                        </a>
-
-                    </article>
+                    <section class="events__listing listing">
+                        <h2 class="listing__title section-title">Мероприятия</h2>
+    
+                        <div class="listing__events-list">
+                            <!-- prettier-ignore -->    
+                            @@loop('blocks/event-card.html', [
+                            {
+                                "class": "listing__event-card",
+                                "img": "assets/images/events/card_nirvana.jpg",
+                                "alt": "nirvana",
+                                "title": "Собираемся и слушаем альбом Nirvana",
+                                "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
+                                "time": "07.12.2022 | начало 18.00",
+                                "datetime": "2022-12-07T18:00"
+                            },
+                            {
+                                "class": "listing__event-card",
+                                "img": "assets/images/events/card_stuff.jpg",
+                                "alt": "stuff",
+                                "title": "Есть тема, нужно обсудить с HowStuffWorks",
+                                "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
+                                "time": "14.12.2022 | начало 18.30",
+                                "datetime": "2022-12-14T18:30"
+                            },
+                            {
+                                "class": "listing__event-card",
+                                "img": "assets/images/events/card_sade.jpg",
+                                "alt": "stuff",
+                                "title": "Вечер | The Best of Sade",
+                                "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.",
+                                "time": "16.12.2022 | начало 20.00",
+                                "datetime": "2022-12-16T20:00"
+                            },
+                            {
+                                "class": "listing__event-card",
+                                "img": "../assets/images/events/card_malevich.jpg",
+                                "alt": "stuff",
+                                "title": "Выставка Малевича в Томске",
+                                "descr": "Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.",
+                                "time": "23.12.2022 | начало 20.00",
+                                "datetime": "2022-12-23T20:00"
+                            },
+                            {
+                                "class": "listing__event-card",
+                                "img": "../assets/images/events/card_tatler.jpg",
+                                "alt": "stuff",
+                                "title": "Мастер — класс по студийной съемке от Tatler",
+                                "descr": "Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.",
+                                "time": "25.12.2022 | начало 13.00",
+                                "datetime": "2022-12-25T13:00"
+                            },
+                            {
+                                "class": "listing__event-card",
+                                "img": "../assets/images/events/card_hatters.jpg",
+                                "alt": "stuff",
+                                "title": "Повесилимся на славу на концерте The Hatters",
+                                "descr": "Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко",
+                                "time": "27.12.2022 | начало 10.00",
+                                "datetime": "2022-12-27T10:00"
+                            }
+                            ])                        
+    
+    
+                        </div>
+                    </section>
                     
-                    <!--Карточка товара Hatters-->
-                    <article class="event-card listing__event-card">
-                        <a href="#" class="event-card__link">
-                            <picture class="event-card__picture">
-                                <img src="./assets/card_hatters.jpg" class="event-card__img" alt="card">
-                            </picture>
-
-                            <h4 class="event-card__title">
-                                Повесилимся на славу на концерте The Hatters
-                            </h4>
-
-                            <p class="event-card__description">
-                                Российская джипси-фолк-рок группа, основанная в 2016 году 
-                                в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко
-                            </p>
-                            <time datetime="2022-12-27T10:00" class="event-card__time">
-                                27.12.2022 | начало 10.00
-                            </time>
-                        </a>
-
-                    </article>
-                
+                <!--Доп. услуги-->
                 </div>
-            </section>
-
-        <!--Доп. услуги-->
-        </div>
-    </main>
-    <footer class="page-footer">
-        <p>
-            ©Авторские права никому не принадлежат, 2077. Все права защищены.
-        </p>
-    </footer>
+        </main>
+        
+        @@include('blocks/page-footer.html');
     </body>
 </html>
