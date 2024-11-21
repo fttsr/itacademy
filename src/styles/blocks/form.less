@@ -1,0 +1,69 @@
+.form {
+    &__header {
+    font-family: @font1;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    color: @black;
+    }
+    &__title {
+        display: block;
+        margin: 0 0 10px;
+        color: @black;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+       }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 60px;
+    }
+    &__field {
+        width: 100%;
+        &--w50 {
+            width: calc(50% - 30px);
+        }
+        &--mb30 {
+            margin-bottom: 30px;
+        }
+    }
+    &__group {
+        width: 100%;
+        &--w50 {
+            width: calc(50% - 30px);
+        }
+    }
+    &__section {
+        margin-bottom: 50px;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    &__btn {
+        max-width: 400px;
+        width: 100%;
+        cursor: pointer;
+    }
+    &__btn-close {
+        margin-left: 200px;
+        border: none;
+        padding: 10px 15px;
+        background-color: transparent;
+        text-decoration: underline;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.3;
+        color: @black;
+        cursor: pointer;
+        transition: color 0.2s;
+        &:hover,
+        &:active {
+            color: @red;
+        }
+    }
+
+}
