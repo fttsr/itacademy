@@ -148,6 +148,7 @@ textarea:focus::placeholder {
   color: transparent;
 }
 body {
+  padding-top: 147px;
   font-family: "Open Sans", sans-serif;
 }
 .login-button {
@@ -504,8 +505,91 @@ body {
 .events {
   padding: 140px 0 100px;
 }
+.events__addservice {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 21.79px;
+  color: #1f1e1e;
+}
+.events__addservice-title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 624px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 62px;
+  margin: 0 auto 150px;
+  padding: 8px 45px;
+  background-color: #1F1E1E;
+  color: #FFFFFF;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+.events__beforetable {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 868px;
+}
 .events__listing {
   margin-bottom: 100px;
+}
+.table {
+  border-collapse: collapse;
+  color: #1f1e1e;
+  width: 100%;
+  margin-top: 60px;
+}
+.table__thead-th {
+  border: 1px solid #BFBFBF;
+  border-top: none;
+  height: 85px;
+  font-weight: 600;
+  font-size: 18;
+  line-height: 1.3;
+}
+.table__tr:nth-child(2n-1) {
+  background-color: rgba(31, 30, 30, 0.03);
+}
+.table__tbody-td {
+  text-align: center ;
+  font-weight: 600;
+  font-size: 16;
+}
+.table__tbody-td:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.table__tbody-th,
+.table__tbody-td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #BFBFBF;
+  padding: 12px;
+  line-height: 1.3;
+}
+.table__tbody-th {
+  padding-left: 0;
+  text-align: left;
+  border-left: none;
+  font-weight: 400;
+  font-size: 18px;
 }
 .page-header {
   position: fixed;
