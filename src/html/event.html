@@ -1,39 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
-   @@include('blocks/head.html')
+<html lang="ru"> 
+    @@include('blocks/head.html')
 
     <body class="body">
-        @@inlcude('blocks/page-header.html');
+        @@include('blocks/page-header.html')
+
         <main class="main">
-            <div class="page-quote">
-                <p class="center_block_element-1">АРТ — ПРОСТРАНСТВО</p>
-                <img class="lenni-main-png" src="lenni-main.png">
-                <p class="center_block_element-2">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ </br>МЕСТО ДЛЯ НАСТЯЩЕГО</p>
-            </div>
-
-            <div class="i-want">
-                <p>Я ХОЧУ:</p>
-                <button style="border: none; background-color: #BC3324; color:aliceblue">Провести мероприятие</button>
-                <button style>Стать арендатором</button>
-            </div>
-
-            <div class="about-us">
-                <button>О НАС</button>
-            </div>
-
-            <article class="event">
-                <form class="reserve">
-                    <div class="reserve__checkbox">Checkbox</div>
-                    <div class="reserve__scheme">Scheme</div>
-                    <div class="reserve__order">Order</div>
-                    <div class="reserve__legend">Legend</div>
+            <div class="event">
+                <div class="event__container">
+                    <div class="event__content content">
+                        <h5>Программа мероприятия:</h5>
+                        <ul>
+                            <li>20:15 — Приветствие гостей</li>
+                            <li>20:30 — Первая подача блюд | Салаты</li>
+                            <li>20:40 — Живой вокал | Композиции 1-3</li>
+                            <li>21:20 — Подача горячих блюд</li>
+                            <li>21:30 — Живой вокал | Композиции 4-7</li>
+                            <li>22:15 — Подача десерта</li>
+                            <li>22:30 — Живой вокал | Композиции 8-9</li>
+                            <li>23:00 — Завершение вечера</li>
+                        </ul>
     
-                </form>
-            </article>
-
+                        <h5>The Best Of Sade</h5>
+                        <p>
+                            Первый альбом-компиляция Sade, выпущенный в 1994 году. Он    содержит 9 треков, включая самые популярные хиты группы, раритеты и их любимые треки. 
+                        </p>
+                        <p>
+                            Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+                            Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
+                        </p>
+                        <ol>
+                            <li>Your Love Is King</li>
+                            <li>Hang On To Your Love</li>
+                            <li>Smooth Operator</li>
+                            <li>Jezebel</li>
+                            <li>The Sweetest Taboo</li>
+                            <li>Is It A Crime</li>
+                            <li>Never As Good As The First Time</li>
+                            <li>Love Is Stronger Than Pride</li>
+                            <li>Paradise</li>
+                        </ol>
+    
+                    </div>
+                </div>
+                
+            </div>
         </main>
 
-        @@include('blocks/page-footer.html') 
-
+        @@include('blocks/page-footer.html')
     </body>
 </html>
