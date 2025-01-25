@@ -61,4 +61,100 @@
         width: calc(100% - 57px);
         object-fit: contain;
     }
+    
+    &__left-btn {
+        width: 272px;
+        height: 52px;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 15px 40px;
+        background-color: @red;
+        outline: none;
+        color: @white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        overflow: hidden;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: #A51505;
+        }
+    }
+    &__right-btn {
+        width: 272px;
+        height: 52px;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 15px 40px;
+        border: 1px solid #1F1E1E;
+        background-color: transparent;
+        outline: none;
+        color: #1F1E1E;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        overflow: hidden;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: #1F1E1E;
+            color: #FFFFFF;
+        }
+    }
+
+    &__iwant-text {
+        padding-top: 100px;
+        padding-bottom: 46px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        font-family: @font2;
+    }
+
+    &__btn {
+        display: inline-block;
+        box-sizing: border-box;
+        padding-bottom: 200px;
+        
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        gap: 106.12px;
+    }
+
+    &__us {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        max-width: 624px;
+        justify-content: center;
+        align-items: center;
+        min-height: 62px;
+        margin: 0 auto 150px;
+        padding: 8px 45px;
+        background-color: #1F1E1E;
+        color: #FFFFFF;
+        font-family: "Lora", serif;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.277;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__block1 {
+        padding-bottom: 158px;
+    }
 }
